@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Tygart Media" }]
 keywords = ["cursor", "mcp", "model-context-protocol", "cloud-agents", "ai-agents"]
-dependencies = ["mcp>=1.0,<3"]
+dependencies = ["mcp>=1.0,<2"]  # 2.x renamed FastMCP -> MCPServer; migrate in v1.1
 
 [project.urls]
 Homepage = "https://github.com/tygart-media/cursor-cloud-agents-mcp"
