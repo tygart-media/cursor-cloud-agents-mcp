@@ -1,5 +1,7 @@
 # cursor-cloud-agents-mcp
 
+[![CI](https://github.com/tygart-media/cursor-cloud-agents-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/tygart-media/cursor-cloud-agents-mcp/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 **An MCP server that lets your AI assistant drive Cursor Cloud Agents.** Launch agents on your repos (or repo-less for research), pick any Cursor model, follow up mid-run, fetch results, and check spend — from Claude Code, Cursor Desktop, Muse, or any MCP client.
 
 If you've searched for *"Cursor Cloud Agents MCP server"*, *"MCP server for Cursor"*, *"connect Claude Code to Cursor"*, *"Cursor API MCP integration"*, or *"launch Cursor agents programmatically"* — this is it.
@@ -17,9 +19,9 @@ It was designed in the open: the v1 spec was reviewed by four AI models, verifie
 **2. Install.**
 
 ```bash
-pip install cursor-cloud-agents-mcp
-# or try it without installing:
+# Install from source (PyPI release coming):
 uvx --from git+https://github.com/tygart-media/cursor-cloud-agents-mcp cursor-cloud-agents-mcp
+# or: pip install git+https://github.com/tygart-media/cursor-cloud-agents-mcp
 ```
 
 **3. Add it to your MCP client.** ⚠️ Set the key in the client's `env` block, not just your shell — MCP servers are spawned with a scrubbed environment and won't inherit shell variables.
