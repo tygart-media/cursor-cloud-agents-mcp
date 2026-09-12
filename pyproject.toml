@@ -1,0 +1,24 @@
+[project]
+name = "cursor-cloud-agents-mcp"
+version = "0.1.0"
+description = "MCP server: launch and steer Cursor Cloud Agents from Claude Code, Cursor Desktop, or any MCP client"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Tygart Media" }]
+keywords = ["cursor", "mcp", "model-context-protocol", "cloud-agents", "ai-agents"]
+dependencies = ["mcp>=1.0,<3"]
+
+[project.urls]
+Homepage = "https://github.com/tygart-media/cursor-cloud-agents-mcp"
+Repository = "https://github.com/tygart-media/cursor-cloud-agents-mcp"
+
+[project.scripts]
+cursor-cloud-agents-mcp = "cursor_cloud_agents_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
